@@ -59,7 +59,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-02-06 22:51:22',
+  postUpdate: '2024-02-08 22:36:18',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -346,7 +346,7 @@ if (true) {
 查看上传的文件，发现有一个上传的规定，我们利用它去上传aspx类型的木马
 
 复制图片链接打开看一下，在file后面的位置删掉一截，让他报错
-1http:/ ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2024/01/09/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/')"><div class="post_cover left"><a href="/2024/01/09/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="文件上传漏洞" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/luyuguohhh/tuku/main/imj/19351a054b0ad149b497a45ab54a90c.jpg?_r_=defed449-c509-8a29-296c-41b85c48a330" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文件上传漏洞" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/2024/01/09/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="文件上传漏洞">未读</a></div><a class="article-title" href="/2024/01/09/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="文件上传漏洞">文件上传漏洞</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-09T02:38:28.000Z" title="发表于 2024-01-09 10:38:28" time="2024-01-09 10:38:28">2024-01-09</time><time class="time_hidden" datetime="2024-01-16T08:11:00.132Z" title="更新于 2024-01-16 16:11:00" time="2024-01-16 16:11:00">2024-01-16</time></span></div><div class="content">一、文件上传漏洞类型汇总
+1http:/ ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2024/01/09/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/')"><div class="post_cover left"><a href="/2024/01/09/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="文件上传漏洞" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/luyuguohhh/tuku/main/imj/90b13c052de2442944aab6a1cd3d566.jpg?_r_=ad52f27f-30c7-768c-f145-4c151d3c1ebe" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文件上传漏洞" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/2024/01/09/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="文件上传漏洞">未读</a></div><a class="article-title" href="/2024/01/09/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="文件上传漏洞">文件上传漏洞</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-09T02:38:28.000Z" title="发表于 2024-01-09 10:38:28" time="2024-01-09 10:38:28">2024-01-09</time><time class="time_hidden" datetime="2024-02-08T14:36:01.343Z" title="更新于 2024-02-08 22:36:01" time="2024-02-08 22:36:01">2024-02-08</time></span></div><div class="content">一、文件上传漏洞类型汇总
 类型：1.无限制：（1）直接用1.php放一句话木马上传
 123&lt;?php @eval($_POST[&#x27;cmd&#x27;]);?&gt;
 
@@ -365,16 +365,16 @@ burpsuite抓包后修改filename
 例如：允许图片只允许jpg，则抓包改后缀改php为jpg
 
 （3）MIME绕过：
-MIME通过通过检查http包的Content-Type字段来判断上传文件是否合法，所以把类型改成允许上传的格式即可
+MIME通过通过检查http包的Content-Type字段来判断上传文件是否合法，所以把类型改成允许上传的格式(image.png)即可
 
-4.其他（主要是懒得归类了）1-大小写绕过
-如果禁止php文件上传，把文件名改成pHp,PhP等绕过
+(4)   .user.ini
+.user.ini:  auto_prepend_file=test.png
 
-2-00截断绕过
-利用解析漏洞，利用00字符截止判断，例如1.php%00.jpg,或者1.php0x00.jpg
+test.png:  &lt;?php @eval($_POST[&#39;a&#39;]); ?&gt;
 
-3-.htaccess绕过
-.htaccess是apache配置文件，提供自定法则让服务器运 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2024/01/08/pikachu%E9%9D%B6%E5%9C%BA/')"><div class="post_cover right"><a href="/2024/01/08/pikachu%E9%9D%B6%E5%9C%BA/" title="pikachu靶场" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/luyuguohhh/tuku/main/imj/bg.jpg?_r_=e9cf311e-831a-75bd-b8ba-295c2ed4e941" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pikachu靶场" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/2024/01/08/pikachu%E9%9D%B6%E5%9C%BA/" title="pikachu靶场">未读</a></div><a class="article-title" href="/2024/01/08/pikachu%E9%9D%B6%E5%9C%BA/" title="pikachu靶场">pikachu靶场</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T01:24:51.000Z" title="发表于 2024-01-08 09:24:51" time="2024-01-08 09:24:51">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T02:33:46.024Z" title="更新于 2024-01-08 10:33:46" time="2024-01-08 10:33:46">2024-01-08</time></span></div><div class="content">一、环境搭建1、搭建pikachu靶场将pikachu-master拖入phpstudy的www目录下
+
+(5)  文件内容过滤
+&lt;? echo &#39;123&#3 ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2024/01/08/pikachu%E9%9D%B6%E5%9C%BA/')"><div class="post_cover right"><a href="/2024/01/08/pikachu%E9%9D%B6%E5%9C%BA/" title="pikachu靶场" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/luyuguohhh/tuku/main/imj/bg.jpg?_r_=e9cf311e-831a-75bd-b8ba-295c2ed4e941" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pikachu靶场" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/2024/01/08/pikachu%E9%9D%B6%E5%9C%BA/" title="pikachu靶场">未读</a></div><a class="article-title" href="/2024/01/08/pikachu%E9%9D%B6%E5%9C%BA/" title="pikachu靶场">pikachu靶场</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-08T01:24:51.000Z" title="发表于 2024-01-08 09:24:51" time="2024-01-08 09:24:51">2024-01-08</time><time class="time_hidden" datetime="2024-01-08T02:33:46.024Z" title="更新于 2024-01-08 10:33:46" time="2024-01-08 10:33:46">2024-01-08</time></span></div><div class="content">一、环境搭建1、搭建pikachu靶场将pikachu-master拖入phpstudy的www目录下
 
 2、修改配置文件C:\phpstudy_pro\WWW\pikachu-master\inc   ，将箭头指向的地方改为root
 
